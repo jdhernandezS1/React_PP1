@@ -1,9 +1,4 @@
-import React, { Component } from 'react'
-
-
-export class Basic extends Component {
-  render (){
-
+export function Basic() {
     return (
       <div> 
         <input type="text" /> 
@@ -12,7 +7,4 @@ export class Basic extends Component {
         <p>Text updated</p>
         </div>
     )
-  }
 }
-
-export default Basic;
