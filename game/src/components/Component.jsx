@@ -1,10 +1,15 @@
-export function Basic() {
+import movies from "../movies.json";
+import {MovieCard} from './MovieCard';
+import styles from '../css/moviesGrid.module.css'
+
+export function GridMovies() {
     return (
-      <div> 
-        <input type="text" /> 
-        <button> Update </button>
-        <p>Text input</p>
-        <p>Text updated</p>
-        </div>
-    )
+      <ul className={styles.moviesGrid}>
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie}/>
+        ))
+
+        }
+      </ul>
+      )
 }
