@@ -1,0 +1,26 @@
+.moviesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.moviesCard{
+    list-style: none;
+    text-align: center;
+
+}
+.moviesImg{
+    height: fit-content;
+    border-radius: 3%;
+    width: 230px;
+}
+@media (max-width: 500px) {
+    .moviesGrid{
+        grid-template-columns: 100%;
+    }
+    .moviesImg{
+        width: 90%;
+    }
+}
