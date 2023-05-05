@@ -1,4 +1,5 @@
 import styles from '../css/moviesGrid.module.css'
+import React from "react";
 
 export function MovieCard({movie}) {
     let title = movie.title
