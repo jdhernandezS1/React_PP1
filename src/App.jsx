@@ -1,17 +1,10 @@
 import React from "react";
-import { moviesTitle, hvrBounceIn } from "./css/moviesGrid.module.css";
-import {Navbar} from './components/Header/index'
-
-
+import { NavBar } from './components/Header/index'
+import {  } from "./css/Header/nav.module.css";
 export function App() {
     return (
         <>
-            {/* <NavBar /> */}
-            <div className={moviesTitle}>
-                <h2 className={moviesTitle + " " + hvrBounceIn} >
-                    Nezfliz
-                </h2>
-            </div>
-    </>
+            {<NavBar />}
+        </>
     );
 }
