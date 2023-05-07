@@ -19,8 +19,10 @@
 }
 
 .moviesTitle {
+    color: #fdfde0;
     text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 25px #cc3333, 0 0 5px #f90606;
+    font-size: 1rem;
 }
 
 .hvrBounceIn {
