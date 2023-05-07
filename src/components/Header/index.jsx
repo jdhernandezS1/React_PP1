@@ -20,9 +20,9 @@ export function NavBarPhone() {
         <div  className={`dropdown-menu ${open? "active" : "inactive"}`}>
             
           <ul>
-          <DropDownItem name={"name"} text={'Home'}/>
-          <DropDownItem name={"name"} text={'Movies'}/>
-          <DropDownItem name={"name"} text={'About'}/>
+          <DropDownItem name={"/"} text={'Home'}/>
+          <DropDownItem name={"/Movies/"} text={'Movies'}/>
+          <DropDownItem name={"/About/"} text={'About'}/>
           </ul>
 
         </div>
@@ -34,7 +34,7 @@ export function NavBarPhone() {
 function DropDownItem(props){
   return(
     <li className="dropdownItem">
-      <a className="dropdownItem"> {props.text}</a>
+      <a href={props.name} className="dropdownItem"> {props.text}</a>
     </li>
   )
 }
@@ -43,15 +43,15 @@ export function NavBarPc() {
     <Nav className="me-auto ">
       <ul>
         <li>
-        <Nav.Link href="#home" className={item}>Home</Nav.Link>
+        <Nav.Link href="/" className={item}>Home</Nav.Link>
         </li>
 
         <li>
-        <Nav.Link href="#features" className={item}>Features</Nav.Link>
+        <Nav.Link href="/Movies" className={item}>Movies</Nav.Link>
         </li>
 
         <li>
-        <Nav.Link href="#pricing" className={item}>Pricing</Nav.Link>
+        <Nav.Link href="/About" className={item}>About</Nav.Link>
         </li>
       </ul>
     </Nav>
@@ -62,7 +62,7 @@ export function NavBar() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container className={barItems}>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <span className={moviesTitle + " " + hvrBounceIn} >
               OmeCast
             </span>
