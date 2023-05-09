@@ -51,6 +51,8 @@ li a:hover {
 @media (max-width: 500px) {
     .navPhone {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .navPc {
