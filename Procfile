@@ -1,1 +1,1 @@
-web: gunicorn <REACT_PP1>.wsgi –log-file -
+web: gunicorn e_comm.wsgi
