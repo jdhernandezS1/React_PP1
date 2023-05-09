@@ -46,6 +46,14 @@ li a:hover {
     display: flex;
 }
 
+.navBarPc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 14px 16px;
+    width: 100%;
+    gap: 15rem;
+}
 
 
 @media (max-width: 500px) {
