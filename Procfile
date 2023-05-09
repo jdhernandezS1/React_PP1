@@ -1,0 +1,1 @@
+web: gunicorn <REACT_PP1>.wsgi –log-file -
