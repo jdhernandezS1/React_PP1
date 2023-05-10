@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'www.react-videos.herokuapp.com',
-    'https://react-videos.herokuapp.com',
     'https://react-videos.herokuapp.com/',
     'react-videos.herokuapp.com/',
     '127.0.0.1',
