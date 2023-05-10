@@ -74,14 +74,14 @@ ROOT_URLCONF = 'REACT_PP1.urls'
 #     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 #     dir = STATIC_URL
 # else:
-dir = os.path.join(BASE_DIR, 'game/build')
+dir = [
+    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'game/build')]
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            dir
-        ],
+        'DIRS':dir,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
