@@ -57,9 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.urls'
-dir = [
-    os.path.join(BASE_DIR, 'templates'),
-    os.path.join(BASE_DIR, 'game/build')]
+dir = os.path.join(BASE_DIR, 'game/build')
 
 TEMPLATES = [
     {
