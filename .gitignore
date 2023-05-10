@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
 # dependencies
 /node_modules
 /.pnp
@@ -21,6 +22,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 # Django 
-env.py
 .env
 /old
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
+node_modules/
+.github/
+cloudinary_python.txt
+*.sqlite3
+staticfiles
+.coverage
